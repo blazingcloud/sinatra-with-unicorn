@@ -1,0 +1,30 @@
+Sinatra Unicorn Template
+
+Conventionally this is organized as follows
+
+Sinatra Modules go in
+
+./modules/module_name.rb
+
+Sinatra Module Views go in
+
+./modules/module_name/views
+
+Example
+
+./modules/site.rb
+./modules/site/views/main.erb
+./modules/site/views/layout.erb
+
+
+Public Assets directory is public/
+
+public/
+is served as /
+
+to run it locally:
+
+    bundle
+    foreman start
+
+

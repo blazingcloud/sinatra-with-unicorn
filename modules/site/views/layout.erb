@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <%= erb(:google_tracking) %>
+    <meta charset="utf-8">
+    <title><%= @title.to_s %></title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    
+    <!-- default grid - expect this to get adjusted for different devices-->
+    <link rel="stylesheet" href="responsive/grid.css">
+    <!-- default device-->
+    <link rel="stylesheet" 
+          href="responsive/base.css">
+    <!-- small devices -->
+    <link rel="stylesheet" 
+          href="responsive/base-small.css"  
+          media='screen and (min-width:20em) and (max-width:48em) ' />
+    <!-- small landscape device -->
+    <link rel="stylesheet" 
+          href="responsive/small/landscape.css"  
+          media='screen and (min-width:30em) and (max-width:48em) ' />
+    <!-- wide devices -->
+    <link rel="stylesheet" 
+          href="responsive/base-wide.css"  
+          media='screen and (min-width:48em)' />
+    <!-- wide tablet device -->
+    <link rel="stylesheet" 
+          href="responsive/wide/tablet.css"  
+          media='screen and (min-width:48em) and (max-width:64em)' />
+    <!-- wide desktop device -->
+    <link rel="stylesheet" 
+          href="responsive/wide/desktop.css" 
+          media='screen and (min-width:64em)' />
+
+  </head>
+
+  <body>
+    <%=yield%>
+  </body>
+</html>
+
+
