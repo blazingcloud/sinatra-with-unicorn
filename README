@@ -1,5 +1,7 @@
 Sinatra Unicorn Template
 
+---
+
 Conventionally this is organized as follows
 
 Sinatra Modules go in
@@ -16,11 +18,20 @@ Example
 ./modules/site/views/main.erb
 ./modules/site/views/layout.erb
 
+---
 
 Public Assets directory is public/
 
 public/
 is served as /
+
+---
+
+to run specs
+
+rake
+
+---
 
 to run it locally:
 
