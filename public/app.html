@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+        </script>
+        <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js">
+        </script>
+    </head>
+    <body>
+        <div data-role="page" id="page1">
+            <div data-role="content">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput2">
+                            Name
+                        </label>
+                        <input id="textinput2" placeholder="" value="" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput1">
+                            Email
+                        </label>
+                        <input id="textinput1" placeholder="" value="" type="email" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="selectmenu1">
+                        What Group?
+                    </label>
+                    <select name="selectmenu1" id="selectmenu1" data-theme="a" data-native-menu="true">
+                        <option value='ungrouped' SELECTED>
+                            Ungrouped
+                        </option>
+                        <option value="option1">
+                            Yay Ya Pony Prince
+                        </option>
+                        <option id='select-custom' onclick='$.mobile.changePage("#popup",{allowSamePageTransition:true})'>
+                        open
+                          </option>
+                    </select>
+                </div>
+                <input data-inline="true" data-theme="b" data-icon="check" data-iconpos="right" value="Submit" type="submit" />
+            </div>
+          </div>
+          <div id="popup" data-role="dialog" data-url="popup" tabindex="0" class="ui-page ui-body-c ui-dialog ui-overlay-a" style="min-height: 983px;"><div role="dialog" class="ui-dialog-contain ui-corner-all ui-overlay-shadow">
+              <div data-theme="e" data-role="header" class="ui-corner-top ui-header ui-bar-e" role="banner"><a data-iconpos="notext" data-icon="delete" href="#" class="ui-btn-left ui-btn ui-btn-up-e ui-shadow ui-btn-corner-all ui-btn-icon-notext" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="e" title="Close"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">Close</span><span class="ui-icon ui-icon-delete ui-icon-shadow">&nbsp;</span></span></a>
+                <h1 class="ui-title" role="heading" aria-level="1">Dialog</h1>
+              </div><!-- /header -->
+
+              <div data-theme="d" data-role="content" class="ui-content ui-body-d" role="main">	
+                <h2>Create a Group</h2>
+                <p>
+                  Enter what group you would like this contact to belong to
+                </p>		
+
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput1">
+                            Group Name
+                        </label>
+                        <input id="textinput1" placeholder="" value="Camel" type="email" />
+                    </fieldset>
+                </div>
+
+                <p>
+                  <a data-icon="back" data-inline="true" data-role="button" data-rel="back" href="#one" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="d" class="ui-btn ui-btn-inline ui-shadow ui-btn-corner-all ui-btn-icon-left ui-btn-up-d" data-transition="pop" data-direction="reverse">
+                  <span class="ui-btn-inner ui-btn-corner-all">
+                    <span class="ui-btn-text">Cancel</span>
+                      <span class="ui-icon ui-icon-back ui-icon-shadow">&nbsp;</span>
+                  </span>
+                  </a>
+                </p>	
+                <p><a data-icon="back" data-inline="true" data-role="button" data-rel="back" href="#one" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="d" class="ui-btn ui-btn-inline ui-shadow ui-btn-corner-all ui-btn-icon-left ui-btn-up-d" data-transition="pop" data-direction="reverse">
+                  <span class="ui-btn-inner ui-btn-corner-all">
+                    <span class="ui-btn-text">Save</span>
+                    <span class="ui-icon ui-icon-back ui-icon-shadow">&nbsp;</span></span></a></p>	
+              </div><!-- /content -->
+
+              <div data-role="footer" class="ui-corner-bottom ui-footer ui-bar-a" role="contentinfo">
+                <h4 class="ui-title" role="heading" aria-level="1">Page Footer</h4>
+              </div><!-- /footer -->
+            </div>
+          </div>
+        <script>
+            //App custom javascript
+        </script>
+    </body>
+</html>
